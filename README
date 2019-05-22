@@ -1,1 +1,50 @@
-lulzy anti-forensics sauce
+Original author[int0x80] lulzy anti-forensics sauce
+
+Index:-
+
+bogspls
+- make truecrypt volume less random to help avoid detection
+
+derpherp
+- script to checksum certain bytes on a device and verify checksum against a flat file from future checks
+*note*: be sure to update $devicelist to your flat file
+
+didsomeonesayspidermanthread
+- simple script that edits privoxy config inline to either enable or disable browsing through tor via privoxy
+
+durrhurr
+- script to pollute device (via filesystem) with artifacts of encrypted files, all dynamically generated. carving device will produce over 9000 encypted files with long passwords and garbage content, obliterating signal:noise ratio.
+*note*: point $wordlist at a dictionary file or whatever
+
+goobypls.patch
+
+helloyesthisisdog.py
+- helloyesthisisdog is a python script for embedding and  extracting parasite files into a host png file. several  options are available to protect your parasite file from detection or carving. when embedding a parasite file, the resulting file is named as 'infected.png' unless -o is used.
+the parasite file can first be 'encoded' with an xor using the -x option and specifying a key in hex representation. your parasite file can also be split across two sections in the png so that carving tools will not extract a single, contiguous version of your parasite file. use -e for this.
+
+herpderp
+- script to checksum certain bytes on a device and write checksum to a flat file for future checks
+*note*: be sure to update $devicelist to your flat file
+
+hurrdurr
+- encrypts files with random passwords then removes the encrypted files
+
+isdolan.patch
+
+lookatallthefeelsiknow
+- store system time, change system time to random time reset file time, restore system time
+
+opwilldeliver
+- generate an encrypted but crackable archive that contains a fake keepass database with no actual info in it
+
+picsoritdidnthappen
+- script that generates and encrypts/compresses random files then stores encrypted file in image and audio files using steghide. file is encrypted with long, random, password; but embedded into host file protected by dictionary word. easy to extract, hard to crack, all for nothing (random)
+# *note*: point $wordlist at a dictionary file or whatever
+
+scalpel.conf
+
+shoopwhoop
+- writes fun bytes to a device
+
+umadbro
+- generate an encrypted but crackable archive that contains a fake truecrypt volume with no actual info in it
